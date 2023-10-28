@@ -1,0 +1,26 @@
+local 表名 = {}
+
+表名.AllData = {}
+
+function 表名:Get(id)
+	local data = self.AllData[id]
+	if data then
+		return data
+	end
+	if not 表名[id] then
+		print("没有找到:表名  中的:",id)
+		return nil
+	end
+	data = {}
+	local config = 表名[id]
+data中为所有数据赋值
+	return data
+end
+
+描述
+
+配置文件中的所有值
+
+表名.KEYS= 所有keys
+
+return 表名
